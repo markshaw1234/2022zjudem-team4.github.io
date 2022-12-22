@@ -1,0 +1,41 @@
+.parent {
+    position: relative;
+    overflow: hidden;
+}
+
+.center,
+.left,
+.right {
+    box-sizing: border-box;
+    float: left;
+}
+
+.center {
+    background-color: #F4F6F9;
+    width: 60%;
+}
+
+.left {
+    width: 17.8%;
+    background-color: #F4F6F9;
+}
+
+.right {
+    width: 22.2%;
+    background-color: #F4F6F9;
+}
+
+.left,
+.right,
+.center {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+/* .left p {
+    display: none;
+}
+
+.right p {
+    display: none;
+} */

@@ -1,5 +1,6 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,500,500italic,600,600italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 html,
 body,
 div,
@@ -80,6 +81,7 @@ summary,
 time,
 mark,
 audio,
+select,
 video {
     margin: 0;
     padding: 0;
@@ -148,32 +150,37 @@ p {
     font-size: 15px;
     line-height: 27px;
     padding-bottom: 15px;
-    color: #414A52
+    color: #414A52;
+    margin-bottom: 20px;
+
 }
 
 h1 {
     font-size: 45px;
-    font-weight: 300;
-    line-height: 68px
+    font-weight: 400;
+    line-height: 68px;
+    margin-bottom: 30px;
 }
 
 h2 {
-    font-size: 36px;
-    font-weight: 300;
-    color: #fff
+    font-size: 32px;
+    font-weight: 400;
+    color: #414A52;
+    margin-bottom: 30px;
 }
 
 h3 {
     font-size: 20px;
     line-height: 32px;
-    margin-bottom: 20px;
-    color: #8A9097
+    margin-bottom: 10px;
+    font-weight: 380;
+    color: #414A52
 }
 
 h4 {
     font-size: 15px;
     font-weight: 600;
-    margin: 7px 0 65px 60px;
+    margin: 7px 0 20px 60px;
     text-transform: uppercase
 }
 
@@ -1820,15 +1827,19 @@ video::-webkit-media-text-track-display {
     0% {
         border-top-color: #73859f
     }
+
     20% {
         border-top-color: #73859f
     }
+
     35% {
         border-top-color: #fff
     }
+
     60% {
         border-top-color: #73859f
     }
+
     100% {
         border-top-color: #73859f
     }
@@ -1838,15 +1849,19 @@ video::-webkit-media-text-track-display {
     0% {
         border-top-color: #73859f
     }
+
     20% {
         border-top-color: #73859f
     }
+
     35% {
         border-top-color: #fff
     }
+
     60% {
         border-top-color: #73859f
     }
+
     100% {
         border-top-color: #73859f
     }
@@ -2187,7 +2202,8 @@ textarea {
 .header-nav-wrapper .primary-nav-wrapper {
     float: right;
     -webkit-transition: all 300ms;
-    transition: all 300ms
+    transition: all 300ms;
+    margin-right: 5%;
 }
 
 .header-nav-wrapper nav {
@@ -2333,7 +2349,6 @@ textarea {
     transition: all 300ms;
     opacity: 0;
     background-color: #FFB35F
-
 }
 
 .search-wrapper ul.search .is-selected {
@@ -2495,6 +2510,7 @@ header.hero h3 {
         margin-top: 15%;
         opacity: 1
     }
+
     to {
         margin-top: 75%;
         opacity: 0
@@ -2506,6 +2522,7 @@ header.hero h3 {
         margin-top: 15%;
         opacity: 1
     }
+
     to {
         margin-top: 75%;
         opacity: 0
@@ -3960,6 +3977,7 @@ footer .footer-nav ul.footer-secondary-nav li {
     .header-nav-wrapper nav {
         margin-right: 10px
     }
+
     .header-nav-wrapper .logo {
         width: 280px
     }
@@ -3977,62 +3995,77 @@ footer .footer-nav ul.footer-secondary-nav li {
         opacity: 0;
         background-color: #414A52
     }
+
     .navicon {
         visibility: visible
     }
+
     .header-nav-wrapper nav {
         width: 100%;
         padding: 100px 0 0;
         text-align: center
     }
+
     .header-nav-wrapper nav ul {
         display: block
     }
+
     .header-nav-wrapper nav ul li {
         font-size: 30px;
         display: block;
         padding: 10px 20px;
         border-right: none
     }
+
     .secondary-nav-wrapper ul.secondary-nav li {
         font-size: 30px
     }
+
     .header-nav-wrapper nav ul li a {
         display: block;
         padding-bottom: 40px;
         color: #fff
     }
+
     .header-nav-wrapper nav ul li a:before {
         display: none
     }
+
     .secondary-nav-wrapper {
         display: block;
         padding: 0;
         text-align: center;
         background-color: transparent
     }
+
     .secondary-nav-wrapper ul {
         display: block
     }
+
     .secondary-nav-wrapper li a:before {
         display: none
     }
+
     .secondary-nav-wrapper ul li.subscribe a {
         font-weight: 600;
         display: block;
         color: #fff
     }
+
     .secondary-nav-wrapper ul li.subscribe a:hover {
         color: #ffffff
     }
+
     .secondary-nav-wrapper ul.secondary-nav li.subscribe {
         display: block;
         padding: 10px 0;
         border-right: none
     }
+
     .secondary-nav-wrapper ul.secondary-nav li.search i {
         display: none
     }
+
     .secondary-nav-wrapper ul.secondary-nav li.subscribe:after {
         display: none
     }
@@ -4042,30 +4075,38 @@ footer .footer-nav ul.footer-secondary-nav li {
     .collective .video-player {
         margin: 25px 0 50px
     }
+
     .crew article.crew-member {
         margin-bottom: 30px
     }
+
     .latest-articles article.standard-article {
         margin-top: 20px
     }
+
     h4 {
         margin-left: 0
     }
+
     .freebies .content-left {
         margin-bottom: 20px;
         padding-right: 0;
         border-right: none
     }
+
     .freebies .content-right {
         padding-left: 15px
     }
+
     footer .footer-nav ul.footer-primary-nav li {
         margin-right: 40px
     }
+
     section.get-started h2 {
         line-height: 42px;
         margin: 0 0 20px
     }
+
     .latest-articles article {
         margin-top: 50px
     }
@@ -4078,57 +4119,71 @@ footer .footer-nav ul.footer-secondary-nav li {
         text-align: left;
         border-right: none
     }
+
     .stats .stats-container:last-child {
         margin-bottom: 0
     }
+
     .latest-articles .sort {
         text-align: left
     }
+
     footer .footer-branding {
         margin-bottom: 20px
     }
+
     footer .footer-nav {
         padding-top: 20px;
         border-top: solid 1px rgba(255, 255, 255, 0.15)
     }
+
     footer .footer-nav ul.footer-primary-nav {
         display: block;
         margin-bottom: 0
     }
+
     footer .footer-nav ul.footer-primary-nav li {
         display: block;
         margin: 0 0 20px;
         padding: 15px 0;
         border-bottom: dashed 1px rgba(255, 255, 255, 0.25)
     }
+
     footer ul li a {
         display: block
     }
+
     footer .footer-nav ul.footer-share {
         display: block;
         float: none
     }
+
     footer ul.footer-secondary-nav {
         margin-top: 40px
     }
+
     footer ul.footer-secondary-nav li a {
         margin-top: 10px
     }
+
     footer .footer-nav ul.footer-share>li {
         display: block;
         margin: 0 0 20px;
         padding: 15px 0;
         border-bottom: dashed 1px rgba(255, 255, 255, 0.25)
     }
+
     .share-dropdown {
         top: auto;
         right: auto;
         bottom: 120px;
         left: 15px
     }
+
     .share-dropdown:after {
         left: 20%
     }
+
     .flickity-page-dots {
         line-height: 1;
         position: absolute;
@@ -4143,6 +4198,7 @@ footer .footer-nav ul.footer-secondary-nav li {
         transform: translateX(-50%);
         text-align: center
     }
+
     .flickity-page-dots .dot {
         display: inline-block;
         width: 12px;
@@ -4152,6 +4208,7 @@ footer .footer-nav ul.footer-secondary-nav li {
         border: 2px solid white;
         background: transparent
     }
+
     div.mouse-container {
         display: none
     }
@@ -4161,38 +4218,48 @@ footer .footer-nav ul.footer-secondary-nav li {
     .video-js {
         width: 100%
     }
+
     .collective .video-player {
         width: 100%
     }
+
     header.hero {
         height: 640px
     }
+
     .mouse-container {
         display: none
     }
+
     .carousel-cell {
         height: 640px
     }
+
     header.hero h1 {
         font-size: 30px;
         line-height: 40px
     }
+
     .has-padding {
         padding: 80px 0
     }
+
     .has-padding-tall {
         padding: 80px 0
     }
+
     section.get-started h2 {
         font-size: 24px;
         line-height: 48px;
         margin-right: 0;
         margin-bottom: 30px
     }
+
     .latest-articles article.featured-article {
         height: 310px;
         max-height: 310px
     }
+
     .latest-articles article.standard-article {
         height: 180px;
         max-height: 180px
@@ -4204,19 +4271,24 @@ footer .footer-nav ul.footer-secondary-nav li {
         border-bottom: solid 5px #FFB35F;
         background-color: #414A52
     }
+
     .header-nav-wrapper .logo {
         width: 250px
     }
+
     .navicon {
         padding: 52px 35px;
         background-color: transparent
     }
+
     .header-nav-wrapper .logo {
         border-bottom: none
     }
+
     .sort h5 {
         display: block
     }
+
     .latest-articles select#inputArticle-Sort {
         margin: 20px 0
     }
@@ -4225,11 +4297,25 @@ footer .footer-nav ul.footer-secondary-nav li {
 .content {
     width: 1560px;
     height: 100%;
-    margin-left: 120px;
+    margin-left: 17.8%;
     margin-top: 50px;
 }
 
-.content .title2 {
+.content img {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 15px;
+    color: #414A52;
+    margin-bottom: 20px;
+
+}
+
+/* .content .title2 {
     margin: 0;
     padding: 0;
     border: 0;
@@ -4238,6 +4324,7 @@ footer .footer-nav ul.footer-secondary-nav li {
     vertical-align: baseline;
     margin-bottom: 40px;
     margin-top: 60px;
+    color: #000
 }
 
 .content p {
@@ -4247,4 +4334,4 @@ footer .footer-nav ul.footer-secondary-nav li {
     color: #414A52;
     margin-bottom: 1px;
     line-height: 45px;
-}
+} */
