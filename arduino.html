@@ -23,9 +23,20 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/arduino-light.min.css"/>
+    <script src="js/highlight.min.js"></script>
+
 </head>
 
 <body>
+    <script>
+         hljs.initHighlightingOnLoad();
+         hljs.initLineNumbersOnLoad({
+         // 让单行的时候也显示行号
+         singleLine: true
+         });
+    </script>
     <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -84,387 +95,445 @@
                 <img class="picture" src="./img/ad1.png" alt="" width="40%">
                 <h3>代码展示</h3>
                 <div>
-                    <p>
-                        const int buttonPin = 2; // the number of the pushbutton pin<br>
-                        const int ledPin = 13; // the number of the LED pin<br>
+                    <pre><code class="cpp">
+const int buttonPin = 2;     // the number of the pushbutton pin
+const int ledPin =  13;      // the number of the LED pin
 
-                        // variables will change:<br>
-                        int buttonState = 0; // variable for reading the pushbutton status<br>
+// variables will change:
+int buttonState = 0;         // variable for reading the pushbutton status
 
-                        void setup() {<br>
-                        // initialize the LED pin as an output:<br>
-                        pinMode(ledPin, OUTPUT);<br>
-                        // initialize the pushbutton pin as an input:<br>
-                        pinMode(buttonPin, INPUT);<br>
-                        }
+void setup() {
+  // initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+}
 
-                        void loop() {<br>
-                        // read the state of the pushbutton value:<br>
-                        buttonState = digitalRead(buttonPin);<br>
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
 
-                        // check if the pushbutton is pressed. If it is, the buttonState is HIGH:<br>
-                        if (buttonState == HIGH) {<br>
-                        // turn LED on:<br>
-                        digitalWrite(ledPin, HIGH);<br>
-                        } else {<br>
-                        // turn LED off:<br>
-                        digitalWrite(ledPin, LOW);
-                        }
-                        }
-                    </p>
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if (buttonState == HIGH) {
+    // turn LED on:
+    digitalWrite(ledPin, HIGH);
+  } else {
+    // turn LED off:
+    digitalWrite(ledPin, LOW);
+
+  }
+}
+                    <code><pre>
                 </div>
                 <!-- 结束 -->
                 <h2>电位器实验</h2>
                 <img class="picture" src="./img/ad2.png" alt="" width="40%">
                 <h3>代码展示</h3>
                 <div>
-                    <p>
-                        int sensorPin = A0; // select the input pin for the potentiometer<br>
-                        int ledPin = 13; // select the pin for the LED<br>
-                        int sensorValue = 0; // variable to store the value coming from the sensor<br>
-                        void setup() {<br>
-                        // declare the ledPin as an OUTPUT:<br>
-                        pinMode(ledPin, OUTPUT);<br>
-                        }<br>
-                        void loop() {<br>
-                        // read the value from the sensor:<br>
-                        sensorValue = analogRead(sensorPin);<br>
-                        // turn the ledPin on<br>
-                        digitalWrite(ledPin, HIGH);<br>
-                        // stop the program for <sensorValue> milliseconds:<br>
-                            delay(sensorValue);<br>
-                            // turn the ledPin off:<br>
-                            digitalWrite(ledPin, LOW);<br>
-                            // stop the program for for <sensorValue> milliseconds:<br>
-                                delay(sensorValue);<br>
-                                }<br>
-                                //<br>
-                                int sensorPin = A0; // select the input pin for the potentiometer<br>
-                                int ledPin = 13; // select the pin for the LED<br>
-                                int sensorValue = 0; // variable to store the value coming from the sensor<br>
-                                void setup() {<br>
-                                // declare the ledPin as an OUTPUT:<br>
-                                pinMode(ledPin, OUTPUT);<br>
-                                Serial.begin(9600);<br>
-                                }<br>
-                                void loop() {<br>
-                                // read the value from the sensor:<br>
-                                sensorValue = analogRead(sensorPin);<br>
-                                // turn the ledPin on<br>
-                                digitalWrite(ledPin, HIGH);<br>
-                                // stop the program for <sensorValue> milliseconds:<br>
-                                    delay(sensorValue);<br>
-                                    // turn the ledPin off:<br>
-                                    digitalWrite(ledPin, LOW);<br>
-                                    // stop the program for for <sensorValue> milliseconds:<br>
-                                        delay(sensorValue);<br>
-                                        Serial.println(sensorValue);<br>
-                                        delay(1);
-                                        }
-                    </p>
+                    <pre><code class="cpp">
+int sensorPin = A0; // select the input pin for the potentiometer
+int ledPin = 13; // select the pin for the LED
+int sensorValue = 0; // variable to store the value coming from the sensor
+void setup() {
+ // declare the ledPin as an OUTPUT:
+ pinMode(ledPin, OUTPUT);
+}
+void loop() {
+ // read the value from the sensor:
+ sensorValue = analogRead(sensorPin);
+ // turn the ledPin on
+ digitalWrite(ledPin, HIGH);
+ // stop the program for <sensorValue> milliseconds:
+ delay(sensorValue);
+ // turn the ledPin off:
+ digitalWrite(ledPin, LOW);
+ // stop the program for for <sensorValue> milliseconds:
+ delay(sensorValue);
+}
+//
+int sensorPin = A0; // select the input pin for the potentiometer
+int ledPin = 13; // select the pin for the LED
+int sensorValue = 0; // variable to store the value coming from the sensor
+void setup() {
+ // declare the ledPin as an OUTPUT:
+ pinMode(ledPin, OUTPUT);
+ Serial.begin(9600);
+}
+void loop() {
+ // read the value from the sensor:
+ sensorValue = analogRead(sensorPin);
+ // turn the ledPin on
+ digitalWrite(ledPin, HIGH);
+ // stop the program for <sensorValue> milliseconds:
+ delay(sensorValue);
+ // turn the ledPin off:
+ digitalWrite(ledPin, LOW);
+ // stop the program for for <sensorValue> milliseconds:
+ delay(sensorValue);
+ Serial.println(sensorValue);
+ delay(1);
+}
+
+                    <code><pre>
                 </div>
                 <!-- 结束 -->
                 <h2>超声波测距，LCD1602显示</h2>
                 <img class="picture" src="./img/ad3.png" alt="" width="40%">
                 <h3>代码展示</h3>
                 <div>
-                    <p>
-                        #include <LiquidCrystal.h> //需要用的到库文件, 这个库需要到arduino ide中安装<br>
-                            LiquidCrystal lcd(2/*RS*/, 3/*E*/, 4/*D4*/, 5/*D5*/, 6/*D6*/, 7/*D7*/);//创建1602显示器实例<br>
-                            //us<br>
-                            // circuit<br>
-                            /*<br>
-                            Arduino SR04<br>
-                            5V --- VCC<br>
-                            A0 --- Trig<br>
-                            A1 --- Echo<br>
-                            GND --- GND<br>
-                            */<br>
-                            // pin setting<br>
-                            #define TrigPin A0<br>
-                            // __|^|_____________<br>
-                            // 10us or more HITH SIGNAL will drive it work for one tim<br>
-                            #define EchoPin A1<br>
-                            // ______|^^^^^^^^|__<br>
-                            // PULSE WIDTH stand for distance(the time of ultrasound transmit, both go and back)<br>
-                            // pulse width WILL NOT long than 38ms, it means timeout<br>
-                            // Distance = Speed x Time<br>
-                            // Speed of sound ~= 340m/s = 0.340mm/us<br>
-                            int count = 0;<br>
-                            long duration;<br>
-                            // PULSE WIDTH<br>
-                            //湿度<br>
-                            #include "DHT.h"<br>
-                            #define DHTPIN A2 // Digital pin connected to the DHT sensor<br>
-                            // Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 --<br>
-                            // Pin 15 can work but DHT must be disconnected during program upload.<br>
-                            // Uncomment whatever type you're using!<br>
-                            #define DHTTYPE DHT11 // DHT 11<br>
-                            //#define DHTTYPE DHT22 // DHT 22 (AM2302), AM2321<br>
-                            //#define DHTTYPE DHT21 // DHT 21 (AM2301)<br>
-                            // Connect pin 1 (on the left) of the sensor to +5V<br>
-                            // NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1<br>
-                            // to 3.3V instead of 5V!<br>
-                            // Connect pin 2 of the sensor to whatever your DHTPIN is<br>
-                            // Connect pin 4 (on the right) of the sensor to GROUND<br>
-                            // Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor<br>
-                            // Initialize DHT sensor.<br>
-                            // Note that older versions of this library took an optional third parameter to<br>
-                            // tweak the timings for faster processors. This parameter is no longer needed<br>
-                            // as the current DHT reading algorithm adjusts itself to work on faster procs.<br>
-                            DHT dht(DHTPIN,DHTTYPE);<br>
-                            void setup() {<br>
-                            // set Serial communication<br>
-                            Serial.begin(115200);<br>
-                            // set pin mode<br>
-                            pinMode(TrigPin, OUTPUT);<br>
-                            pinMode(EchoPin, INPUT);<br>
-                            // init pin<br>
-                            digitalWrite(TrigPin, LOW);<br>
-                            delay(1);<br>
-                            Serial.println(F("DHTxx test!"));<br>
-                            dht.begin();<br>
-                            lcd.begin(16, 2); //LCD初始化<br>
-                            //lcd.print("hello, world!"); //LCD输出字符 hello,world!<br>
-                            }<br>
-                            void loop() {<br>
-                            lcd.setCursor(0, 1);//设置光标到指定位置<br>
-                            //lcd.print(millis()/1000);//显示上电到目前为止的秒数<br>
-                            Serial.println(count++);<br>
-                            Serial.println(getDistance());<br>
-                            Serial.println("");<br>
-                            Serial.println("");<br>
-                            char tt="";<br>
-                            delay(1000);<br>
-                            delay(2000);<br>
-                            // Reading temperature or humidity takes about 250 milliseconds!<br>
-                            // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)<br>
-                            float h = dht.readHumidity();<br>
-                            // Read temperature as Celsius (the default)<br>
-                            float t = dht.readTemperature();<br>
-                            // Read temperature as Fahrenheit (isFahrenheit = true)<br>
-                            float f = dht.readTemperature(true);<br>
-                            // Check if any reads failed and exit early (to try again).<br>
-                            if (isnan(h) || isnan(t) || isnan(f)) {<br>
-                            Serial.println(F("Failed to read from DHT sensor!"));<br>
-                            return;<br>
-                            }<br>
-                            Serial.print(F("Humidity: "));<br>
-                            Serial.print(h);<br>
-                            Serial.print(F("% Temperature: "));<br>
-                            Serial.print(t);<br>
-                            Serial.print(F("°C "));<br>
-                            Serial.print(f);<br>
-                            Serial.println(F("°F"));<br>
-                            lcd.clear();<br>
-                            lcd.print(t);<br>
-                            lcd.print("C ");<br>
-                            lcd.setCursor(0, 1);//设置光标到指定位置<br>
-                            lcd.print(h);<br>
-                            lcd.print("% ");<br>
-                            }<br>
-                            long getDistance() {<br>
-                            // trig<br>
-                            digitalWrite(TrigPin, LOW);<br>
-                            delayMicroseconds(2);<br>
-                            digitalWrite(TrigPin, HIGH);<br>
-                            delayMicroseconds(10);<br>
-                            digitalWrite(TrigPin, LOW);<br>
-                            // echo<br>
-                            duration = pulseIn(EchoPin, HIGH); // unit: us<br>
-                            return duration * 0.34029 / 2; // unit: mm
-                            }
-                    </p>
+                    <pre><code class="cpp">
+#include <LiquidCrystal.h> //需要用的到库文件, 这个库需要到arduino ide中安装
+
+LiquidCrystal lcd(2/*RS*/, 3/*E*/, 4/*D4*/, 5/*D5*/, 6/*D6*/, 7/*D7*/);//创建1602显示器实例
+
+
+
+
+//us
+// circuit
+
+/*
+Arduino        SR04
+5V        ---    VCC
+A0        ---    Trig
+A1        ---    Echo
+GND        ---    GND
+*/
+
+// pin setting
+
+#define TrigPin A0    
+// __|^|_____________
+// 10us or more HITH SIGNAL will drive it work for one time
+
+#define EchoPin A1    
+// ______|^^^^^^^^|__ 
+// PULSE WIDTH stand for distance(the time of ultrasound transmit, both go and back)
+// pulse width WILL NOT long than 38ms, it means timeout
+// Distance = Speed x Time
+// Speed of sound ~= 340m/s = 0.340mm/us
+
+int count = 0;
+
+long duration;
+// PULSE WIDTH
+
+
+//湿度
+#include "DHT.h"
+
+#define DHTPIN A2     // Digital pin connected to the DHT sensor
+// Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 --
+// Pin 15 can work but DHT must be disconnected during program upload.
+
+// Uncomment whatever type you're using!
+#define DHTTYPE DHT11   // DHT 11
+//#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
+//#define DHTTYPE DHT21   // DHT 21 (AM2301)
+
+// Connect pin 1 (on the left) of the sensor to +5V
+// NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1
+// to 3.3V instead of 5V!
+// Connect pin 2 of the sensor to whatever your DHTPIN is
+// Connect pin 4 (on the right) of the sensor to GROUND
+// Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
+
+// Initialize DHT sensor.
+// Note that older versions of this library took an optional third parameter to
+// tweak the timings for faster processors.  This parameter is no longer needed
+// as the current DHT reading algorithm adjusts itself to work on faster procs.
+DHT dht(DHTPIN,DHTTYPE);
+
+
+
+
+
+void setup() {
+    // set Serial communication
+    Serial.begin(115200);
+    // set pin mode
+    pinMode(TrigPin, OUTPUT);
+    pinMode(EchoPin, INPUT);
+    // init pin
+    digitalWrite(TrigPin, LOW);
+    delay(1);
+  Serial.println(F("DHTxx test!"));
+
+  dht.begin();
+
+
+
+
+
+  
+  lcd.begin(16, 2); //LCD初始化
+
+
+  //lcd.print("hello, world!"); //LCD输出字符 hello,world!
+}
+
+void loop() {
+  lcd.setCursor(0, 1);//设置光标到指定位置
+  //lcd.print(millis()/1000);//显示上电到目前为止的秒数
+  Serial.println(count++);
+  Serial.println(getDistance());
+  Serial.println("");
+  Serial.println("");
+  char tt="";
+
+
+  
+  delay(1000);
+
+  delay(2000);
+
+  // Reading temperature or humidity takes about 250 milliseconds!
+  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+  float h = dht.readHumidity();
+  // Read temperature as Celsius (the default)
+  float t = dht.readTemperature();
+  // Read temperature as Fahrenheit (isFahrenheit = true)
+  float f = dht.readTemperature(true);
+
+  // Check if any reads failed and exit early (to try again).
+  if (isnan(h) || isnan(t) || isnan(f)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.print(F("%  Temperature: "));
+  Serial.print(t);
+  Serial.print(F("°C "));
+  Serial.print(f);
+  Serial.println(F("°F"));
+
+  
+  lcd.clear();
+  lcd.print(t);
+  lcd.print("C ");
+  lcd.setCursor(0, 1);//设置光标到指定位置
+  lcd.print(h);
+  lcd.print("% ");
+}
+
+
+long getDistance() {
+    // trig
+    digitalWrite(TrigPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(TrigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(TrigPin, LOW);
+    // echo
+    duration = pulseIn(EchoPin, HIGH);     // unit: us
+    return duration * 0.34029 / 2;         // unit: mm
+}
+
+                    <code><pre>
                 </div>
                 <!-- 结束 -->
                 <h2>温湿度传感实验</h2>
                 <h3>代码展示</h3>
                 <div>
-                    <p>
-                        #include <LiquidCrystal.h> //需要用的到库文件, 这个库需要到arduino ide中安装<br>
+                    <pre><code class="cpp">
+#include <LiquidCrystal.h> //需要用的到库文件, 这个库需要到arduino ide中安装
 
-                            LiquidCrystal lcd(2/*RS*/, 3/*E*/, 4/*D4*/, 5/*D5*/, 6/*D6*/, 7/*D7*/);//创建1602显示器实例<br>
-
-
-
-
-                            //us<br>
-                            // circuit<br>
-
-                            /*<br>
-                            Arduino SR04<br>
-                            5V --- VCC<br>
-                            A0 --- Trig<br>
-                            A1 --- Echo<br>
-                            GND --- GND<br>
-                            */<br>
-
-                            // pin setting<br>
-
-                            #define TrigPin A0<br>
-                            // __|^|_____________<br>
-                            // 10us or more HITH SIGNAL will drive it work for one time<br>
-
-                            #define EchoPin A1<br>
-                            // ______|^^^^^^^^|__<br>
-                            // PULSE WIDTH stand for distance(the time of ultrasound transmit, both go and back)<br>
-                            // pulse width WILL NOT long than 38ms, it means timeout<br>
-                            // Distance = Speed x Time<br>
-                            // Speed of sound ~= 340m/s = 0.340mm/us<br>
-
-                            int count = 0;<br>
-
-                            long duration;<br>
-                            // PULSE WIDTH<br>
-
-
-                            //湿度<br>
-                            #include "DHT.h"<br>
-
-                            #define DHTPIN A2 // Digital pin connected to the DHT sensor<br>
-                            // Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 --<br>
-                            // Pin 15 can work but DHT must be disconnected during program upload.<br>
-
-                            // Uncomment whatever type you're using!<br>
-                            #define DHTTYPE DHT11 // DHT 11<br>
-                            //#define DHTTYPE DHT22 // DHT 22 (AM2302), AM2321<br>
-                            //#define DHTTYPE DHT21 // DHT 21 (AM2301)<br>
-
-                            // Connect pin 1 (on the left) of the sensor to +5V<br>
-                            // NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1<br>
-                            // to 3.3V instead of 5V!<br>
-                            // Connect pin 2 of the sensor to whatever your DHTPIN is<br>
-                            // Connect pin 4 (on the right) of the sensor to GROUND<br>
-                            // Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor<br>
-
-                            // Initialize DHT sensor.<br>
-                            // Note that older versions of this library took an optional third parameter to<br>
-                            // tweak the timings for faster processors. This parameter is no longer needed<br>
-                            // as the current DHT reading algorithm adjusts itself to work on faster procs.<br>
-                            DHT dht(DHTPIN,DHTTYPE);<br>
+LiquidCrystal lcd(2/*RS*/, 3/*E*/, 4/*D4*/, 5/*D5*/, 6/*D6*/, 7/*D7*/);//创建1602显示器实例
 
 
 
 
+//us
+// circuit
 
-                            void setup() {<br>
-                            // set Serial communication<br>
-                            Serial.begin(115200);<br>
-                            // set pin mode<br>
-                            pinMode(TrigPin, OUTPUT);<br>
-                            pinMode(EchoPin, INPUT);<br>
-                            // init pin<br>
-                            digitalWrite(TrigPin, LOW);<br>
-                            delay(1);<br>
-                            Serial.println(F("DHTxx test!"));<br>
+/*
+Arduino        SR04
+5V        ---    VCC
+A0        ---    Trig
+A1        ---    Echo
+GND        ---    GND
+*/
 
-                            dht.begin();<br>
+// pin setting
+
+#define TrigPin A0    
+// __|^|_____________
+// 10us or more HITH SIGNAL will drive it work for one time
+
+#define EchoPin A1    
+// ______|^^^^^^^^|__ 
+// PULSE WIDTH stand for distance(the time of ultrasound transmit, both go and back)
+// pulse width WILL NOT long than 38ms, it means timeout
+// Distance = Speed x Time
+// Speed of sound ~= 340m/s = 0.340mm/us
+
+int count = 0;
+
+long duration;
+// PULSE WIDTH
+
+
+//湿度
+#include "DHT.h"
+
+#define DHTPIN A2     // Digital pin connected to the DHT sensor
+// Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 --
+// Pin 15 can work but DHT must be disconnected during program upload.
+
+// Uncomment whatever type you're using!
+#define DHTTYPE DHT11   // DHT 11
+//#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
+//#define DHTTYPE DHT21   // DHT 21 (AM2301)
+
+// Connect pin 1 (on the left) of the sensor to +5V
+// NOTE: If using a board with 3.3V logic like an Arduino Due connect pin 1
+// to 3.3V instead of 5V!
+// Connect pin 2 of the sensor to whatever your DHTPIN is
+// Connect pin 4 (on the right) of the sensor to GROUND
+// Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
+
+// Initialize DHT sensor.
+// Note that older versions of this library took an optional third parameter to
+// tweak the timings for faster processors.  This parameter is no longer needed
+// as the current DHT reading algorithm adjusts itself to work on faster procs.
+DHT dht(DHTPIN,DHTTYPE);
 
 
 
 
 
+void setup() {
+    // set Serial communication
+    Serial.begin(115200);
+    // set pin mode
+    pinMode(TrigPin, OUTPUT);
+    pinMode(EchoPin, INPUT);
+    // init pin
+    digitalWrite(TrigPin, LOW);
+    delay(1);
+  Serial.println(F("DHTxx test!"));
 
-                            lcd.begin(16, 2); //LCD初始化<br>
-
-
-                            //lcd.print("hello, world!"); //LCD输出字符 hello,world!<br>
-                            }
-
-                            void loop() {<br>
-                            lcd.setCursor(0, 1);//设置光标到指定位置<br>
-                            //lcd.print(millis()/1000);//显示上电到目前为止的秒数<br>
-                            Serial.println(count++);<br>
-                            Serial.println(getDistance());<br>
-                            Serial.println("");<br>
-                            Serial.println("");<br>
-                            char tt="";<br>
+  dht.begin();
 
 
 
-                            delay(1000);<br>
-
-                            delay(2000);<br>
-
-                            // Reading temperature or humidity takes about 250 milliseconds!<br>
-                            // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)<br>
-                            float h = dht.readHumidity();<br>
-                            // Read temperature as Celsius (the default)<br>
-                            float t = dht.readTemperature();<br>
-                            // Read temperature as Fahrenheit (isFahrenheit = true)<br>
-                            float f = dht.readTemperature(true);<br>
-
-                            // Check if any reads failed and exit early (to try again).<br>
-                            if (isnan(h) || isnan(t) || isnan(f)) {<br>
-                            Serial.println(F("Failed to read from DHT sensor!"));<br>
-                            return;<br>
-                            }<br>
-
-                            Serial.print(F("Humidity: "));<br>
-                            Serial.print(h);<br>
-                            Serial.print(F("% Temperature: "));<br>
-                            Serial.print(t);<br>
-                            Serial.print(F("°C "));<br>
-                            Serial.print(f);<br>
-                            Serial.println(F("°F"));<br>
 
 
-                            lcd.clear();<br>
-                            lcd.print(t);<br>
-                            lcd.print("C ");<br>
-                            lcd.setCursor(0, 1);//设置光标到指定位置<br>
-                            lcd.print(h);<br>
-                            lcd.print("% ");<br>
-                            }<br>
+  
+  lcd.begin(16, 2); //LCD初始化
 
 
-                            long getDistance() {<br>
-                            // trig<br>
-                            digitalWrite(TrigPin, LOW);<br>
-                            delayMicroseconds(2);<br>
-                            digitalWrite(TrigPin, HIGH);<br>
-                            delayMicroseconds(10);<br>
-                            digitalWrite(TrigPin, LOW);<br>
-                            // echo<br>
-                            duration = pulseIn(EchoPin, HIGH); // unit: us<br>
-                            return duration * 0.34029 / 2; // unit: mm
-                            }
-                    </p>
+  //lcd.print("hello, world!"); //LCD输出字符 hello,world!
+}
+
+void loop() {
+  lcd.setCursor(0, 1);//设置光标到指定位置
+  //lcd.print(millis()/1000);//显示上电到目前为止的秒数
+  Serial.println(count++);
+  Serial.println(getDistance());
+  Serial.println("");
+  Serial.println("");
+  char tt="";
+
+
+  
+  delay(1000);
+
+  delay(2000);
+
+  // Reading temperature or humidity takes about 250 milliseconds!
+  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+  float h = dht.readHumidity();
+  // Read temperature as Celsius (the default)
+  float t = dht.readTemperature();
+  // Read temperature as Fahrenheit (isFahrenheit = true)
+  float f = dht.readTemperature(true);
+
+  // Check if any reads failed and exit early (to try again).
+  if (isnan(h) || isnan(t) || isnan(f)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.print(F("%  Temperature: "));
+  Serial.print(t);
+  Serial.print(F("°C "));
+  Serial.print(f);
+  Serial.println(F("°F"));
+
+  
+  lcd.clear();
+  lcd.print(t);
+  lcd.print("C ");
+  lcd.setCursor(0, 1);//设置光标到指定位置
+  lcd.print(h);
+  lcd.print("% ");
+}
+
+
+long getDistance() {
+    // trig
+    digitalWrite(TrigPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(TrigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(TrigPin, LOW);
+    // echo
+    duration = pulseIn(EchoPin, HIGH);     // unit: us
+    return duration * 0.34029 / 2;         // unit: mm
+}
+
+
+                    <code><pre>
                 </div>
                 <!-- 结束 -->
                 <h2>与processing联动的红绿灯实验</h2>
                 <img class="picture" src="./img/ad4.png" alt="" width="40%">
                 <h3>代码展示</h3>
                 <div>
-                    <p>
-                        import processing.serial.*;<br>
-                        Serial port;<br>
+                    <pre><code class="cpp">
+import processing.serial.*;
+Serial port;
 
-                        void setup(){<br>
-                        port=new Serial(this,"COM5",9600); //Arduino's com<br>
-                        size(600,200);<br>
-                        }<br>
+void setup(){
+  port=new Serial(this,"COM5",9600); //Arduino's com
+  size(600,200);
+}
 
-                        void draw(){<br>
-                        fill(255,0,0);<br>
-                        rect(450,50,100,100);<br>
+void draw(){
+  fill(255,0,0);
+  rect(450,50,100,100);  
 
-                        fill(0,255,0);<br>
-                        rect(50,50,100,100);<br>
+  fill(0,255,0);
+  rect(50,50,100,100);
 
-                        fill(255,255,0);<br>
-                        rect(250,50,100,100);}<br>
+  fill(255,255,0);
+  rect(250,50,100,100);
+}
 
-                        void mouseClicked(){<br>
-                        if((mouseX>=50)&(mouseX<=150)&(mouseY>=50)&(mouseY<=150))<br>
-                                { println("green");<br>
-                                port.write("b");<br>
-                                }<br>
-                                else if((mouseX>=250)&(mouseX<=350)&(mouseY>=50)&(mouseY<=150)) <br>
-                                        { println("yellow");<br>
-                                        port.write("c"); } <br>
-                                        else if((mouseX>=450)&(mouseX<=550)&(mouseY>=50)&(mouseY<=150)) <br>
-                                                { println("red"); port.write("a"); } </p>
+void mouseClicked(){
+  if((mouseX>=50)&(mouseX<=150)&(mouseY>=50)&(mouseY<=150))
+  {
+    println("green");
+    port.write("b");
+  }
+  else if((mouseX>=250)&(mouseX<=350)&(mouseY>=50)&(mouseY<=150))
+  {
+    println("yellow");
+    port.write("c");
+  }
+  else if((mouseX>=450)&(mouseX<=550)&(mouseY>=50)&(mouseY<=150))
+  {
+    println("red");
+    port.write("a");
+  }
+}
+
+                    <code><pre>
                 </div>
                 <!-- 结束 -->
             </div>
