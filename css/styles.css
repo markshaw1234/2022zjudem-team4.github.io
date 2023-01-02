@@ -2232,14 +2232,14 @@ textarea {
 .header-nav-wrapper nav ul li a {
     font-weight: 600;
     position: relative;
-    padding-bottom: 10px;
+
     text-decoration: none;
     color: #414A52
 }
 
-.header-nav-wrapper nav ul li a:hover {
+/* :hover {
     color: #FFB35F
-}
+} */
 
 .header-nav-wrapper nav ul li a:before {
     position: absolute;
