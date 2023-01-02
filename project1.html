@@ -21,11 +21,17 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/flickity.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/arduino-light.min.css"/>
+    <script src="js/highlight.min.js"></script>
 </head>
 
 <body>
+    <script>
+    hljs.initHighlightingOnLoad();
+   </script>
+   
     <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
@@ -71,60 +77,542 @@
         </div>
     </div>
     <!-- 表头结束 -->
-    <div class="layout parent">
-        <div class="left">
-            <p></p>
+    <div class="content">
+    <h1>How do we build a website</h1>
+        <div class="title2">
+            Creation method:
         </div>
-        <div class="center">
-            <div class="content">
-                <h1>
-                    创建方法
-                </h1>
-                <h2> HTML+CSS+JS</h2>
-                <!-- <iframe
-                    src="https://myhub.autodesk360.com/ue28cacf9/shares/public/SH35dfcQT936092f0e43892bb88af1bfe243?mode=embed"
-                    width="50%" height="480" allowfullscreen="true" webkitallowfullscreen="true"
-                    mozallowfullscreen="true" frameborder="0"></iframe> -->
-                <div>
-                    <p>
-                        编译器:Vscode
-                    </p>
-                </div>
-                <!-- 结束 -->
-                <h2>
-                    框架编写
-                </h2>
-                <img src="./img/htmljietu.png" alt="" width="70%">
-                <div>
-                    <p>
-                        在Vscode中对页面的框架进行编排，划分好各元素的区域，将页面的内容填写上去。
-                    </p>
-                </div>
-                <!-- 结束 -->
-                <h2>
-                    样式编写
-                </h2>
-                <img src="./img/cssjietu.png" alt="" width="70%">
-                <div>
-                    <p>
-                        在Vscode中通过对css文件编写，美化整个页面的视觉效果。
-                    </p>
-                </div>
-                <!-- 结束 -->
-                <h2>
-                    网站部署
-                </h2>
-                <div>
-                    <p>
-                        将编写好的网站部署到课程的Github库中。
-                    </p>
-                </div>
-                <!-- 结束 -->
-            </div>
-            <p></p>
+        <div class="body2">
+            <p>
+                HTML+CSS+JS
+            </p>
+            <p>
+                Compiler:Vscode
+    
+    <br>
+    <br>
+    <h2>HTML Page Structure</h2>
+    <p>Below is a visualization of an HTML page structure:</p>
+    <div class="ws-grey" style="width:99%;border:1px solid grey;padding:3px;margin:0;"><font _mstmutation="1">&lt;html&gt;
+    </font><div style="width:90%;border:1px solid grey;padding:3px;margin:20px"><font _mstmutation="1">&lt;head&gt;
+    </font><div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page title&lt;/title&gt;
+    </div><font _mstmutation="1">
+    &lt;/head&gt;
+    </font></div>
+    <div class="ws-grey" style="width:90%;border:1px solid grey;padding:3px;margin:20px;"><font _mstmutation="1">&lt;body&gt;
+    </font><div class="w3-white" style="width:90%;border:1px solid grey;padding:3px;margin:20px;">
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
+    </div><font _mstmutation="1">
+    &lt;/body&gt;
+    </font></div><font _mstmutation="1">
+    &lt;/html&gt;
+    </font></div>
+
+
+    <br>
+    <ul>
+        <li><font _mstmutation="1">The  declaration defines 
+        that this document is an HTML5 document</font><code class="w3-codespan">&lt;!DOCTYPE html&gt;</code></li>
+        <li><font _mstmutation="1">The  element is the root element of an HTML 
+        page</font><code class="w3-codespan">&lt;html&gt;</code></li>
+         <li><font _mstmutation="1">The  element contains meta information about the 
+         HTML page</font><code class="w3-codespan">&lt;head&gt;</code></li>
+         <li><font _mstmutation="1">The  element specifies a title for the 
+         HTML page (which is shown in the browser's title bar or in the page's tab)</font><code class="w3-codespan">&lt;title&gt;</code></li>
+         <li><font _mstmutation="1">The  element defines the 
+         document's body, and is a container for all the visible contents, such as 
+         headings, paragraphs, images, hyperlinks, tables, lists, etc.</font><code class="w3-codespan">&lt;body&gt;</code></li>
+         <li><font _mstmutation="1">The  element defines a large heading</font><code class="w3-codespan">&lt;h1&gt;</code></li>
+         <li><font _mstmutation="1">The  element defines a paragraph</font><code class="w3-codespan">&lt;p&gt;</code></li>
+        </ul>
+            </p>
         </div>
-        <div class="right">
-            <p></p>
+        <div class="title2">
+            <h2>Framework writing</h2>
         </div>
-        <!-- <div style="clear: both;">11111111111</div> -->
+        <div class="body2">
+            <p>
+                Arrange the frame of the page in Vscode, divide the area of each element, and fill in the content of the page.
+            </p>
+            <img src="./img/htmljietu.png" alt="" width="80%">
+        </div>
+        <div class="title2">
+            <h2>Style</h2>
+        </div>
+        <div class="body2">
+            <p>
+                In Vscode, by writing css files, beautify the visual effects of the entire page
+            </p>
+            <img src="./img/cssjietu.png" alt="" width="80%">
+        </div>
+        <div class="title2">
+            <h2>Website deployment</h2>
+        </div>
+        <div class="body2">
+            <p>
+                Deploy the written website to our course's Github library using git
+            </p>
+            <img src="" alt="">
+        </div>
+        <div class="title2">
+            <h2>Code block highlighting</h2>
+        </div>
+        <div class="body2">
+            <p>
+               <h3> 1.Add highlight.js Scripts With HTML</h3>
+You can easily add the necessary scripts to any HTML page for which you have edit access.<br>
+<br>
+Step 1. Open your HTML file in a text editor<br>
+Step 2. Add scripts to section using the provided CDN links:head<br>
+<pre><code class="HTML">
+    &lt;link rel=&quot;stylesheet&quot;
+    href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css&quot;&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js&quot;&gt;&lt;/script&gt;
+    <code></pre>
+            </p>
+
+
+
+<p>
+Step 3.Make sure to add the initiation script <br>
+    <pre><code>
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+    </code></pre>
+</p>
+    <p>
+Step 4.Save your file<br>
+
+    </p>
+
+<p>          
+<h3>2.Use md file conversion plug-in “Markdown PDF” in VS Code</h3>
+<p> 
+First, write the code to a markdown file<br>
+like:<br>
+
+```c<br>
+int sensorPin = A0; <br>
+```<br>
+Then, right-click in the md file and click<br>
+"Markdown PDF:Export (html)"<br>
+You will then get an HTML file with the highlighted code<br>
+
+</p>
+
+
+<br>
+<br>
+
+<h2>Reference：</h2>
+    <p>
+        1. https://www.w3schools.com/html/html_intro.asp
+        2. https://www.cnblogs.com/suwanbin/p/13387649.html <br>
+        3. https://www.sojson.com/rehtml <br>
+    </p>
+
+        </div>
+
+
+        <div class="title2">
+         </div>
+        <div class="body2"> 
+        
+    <script>
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+              ? 'dark'
+              : 'default'
+        });
+      </script>
+    
+    <h2 id="head">The following is the main code of the page</h2>
+    <pre class="hljs"><code><div>
+    <span class="hljs-meta">&lt;!doctype <span class="hljs-meta-keyword">html</span>&gt;</span>
+     
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Allright Group<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"A free html template with Sketch design made with Bootstrap"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"keywords"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"free html template, bootstrap, ui kit, sass"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"author"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"Codrops"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"shortcut icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"img/favicon/favicon.ico"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-TileColor"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"#66e0e5"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-TileImage"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"img/favicon/mstile-144x144.png"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"msapplication-config"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"img/favicon/browserconfig.xml"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"theme-color"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"#ffffff"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/bootstrap.min.css"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/normalize.min.css"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/animate.min.css"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/flickity.min.css"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/styles.css"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    </div></code></pre>
+    <h2 id="body">and the body</h2>
+    <pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container-fluid"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"header-nav-wrapper"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"index.html"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/synthetica-logo.png"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">50px</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Synthetica Freebie"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav-wrapper"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#freebies"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#team"</span>&gt;</span>Team Introduction<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#articles"</span>&gt;</span>Course Progress<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#articles"</span>&gt;</span>Final project<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navicon"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-toggle"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel js-flickity"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-cell"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/hero-bg-01.jpg);"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero-bg"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-12 text-center"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wp1"</span>&gt;</span>We'are Allright Group!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#intro"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn primary wp2"</span>&gt;</span>Learn more<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 col-md-offset-2 hero-intro-text wp3"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Six little bees are working hard for the children to have a happy childhood ~ <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-cell"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/hero-bg-02.jpg);"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero-bg"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-12 text-center"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wp1"</span>&gt;</span>Projects 1<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn primary wp2"</span>&gt;</span>Learn more<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 col-md-offset-2 hero-intro-text wp3"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Project Description<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"carousel-cell"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/hero-bg-03.jpg);"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero-bg"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-12 text-center"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wp1"</span>&gt;</span>Projects 2<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://sc.chinaz.com/?codrops/?p=26570"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn primary wp2"</span>&gt;</span>Learn more<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-8 col-md-offset-2 hero-intro-text wp3"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Project Description<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'mouse-container'</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#intro"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'mouse'</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'scroll-down'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"crew has-padding alternate-bg"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"team"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-12"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Team Introduction<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 col-sm-6 col-xs-12"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"crew-member"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/tupian.png)"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Ding Shiying<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>听松卧雪苦行舟，不染人间桃李花<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 col-sm-6 col-xs-12"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"crew-member"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/tupian2.png)"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Liang Xinmu<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>女孩子就没有就应该的样子<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 col-sm-6 col-xs-12"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"crew-member"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/IMG_4500.jpg)"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Wei Haoran<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Stay Hungry! Stay Foolish!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 col-sm-6 col-xs-12"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"crew-member"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url('img/SHOU.jpg')"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Shou Yuancong<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>尽挹西江，细斟北斗，万象为宾客<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 col-sm-6 col-xs-12"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"crew-member"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url('img/WHEN.jpg')"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>SHAO WENYI<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是帅b<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-3 col-sm-6 col-xs-12"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"crew-member"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url('img/BO.jpg')"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>feng boyu<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>保持对生活的热爱<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"latest-articles has-padding alternate-bg"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"articles"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4 col-sm-4"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Gallery<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-post"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./project1.html"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-image has-overlay"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/article-01.jpg)"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"featured-tag"</span>&gt;</span>Featured<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Website Setup<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这个阶段我们按照老师提供的教程以及网络资源对小组的网站进行搭建与调试<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-footer"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-category"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Website<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-comments"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-comments"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> 2022.10.10<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-post"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./concept.html"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-image has-overlay"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/article-02.jpg)"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Product Concept<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>基于全息展示技术与硬件交互积木，实现儿童在家中的农业种植知识趣味化学习<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-footer"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-category"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Concept<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-comments"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-comments"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> 2022.10.20<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-post"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./cad.html"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-image has-overlay"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/article-03.jpg)"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>CAD<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>在Fusion360中对植物生长模型及动画进行尝试，查看初步的效果呈现<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-footer"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-category"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>CAD<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-comments"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-comments"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>2022.10.24<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row has-top-margin"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-post"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/arduino.html"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-image has-overlay"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/article-04.jpg)"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Arduino<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我们小组进行了一系列点灯实验，电位器实验，超声波测距，LCD1602显示实验，最终又做了进一步的拓展，进行了processing联动的红绿灯实验 <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-footer"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-category"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/arduino.html"</span>&gt;</span>Arduino<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-comments"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-comments"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> 2022.11.24<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-post"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/3dprint.html"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-image has-overlay"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/article-05.jpg)"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>3D Print<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>3D打印技术是基于“离散/堆积成型”的成型思想，用层层加工的方法将成型材料“堆积”而形成实体零件，我么使用极光尔沃A3S打印机完成打印制作<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-footer"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-category"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/3dprint.html"</span>&gt;</span>Print<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-comments"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-comments"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>2022.12.01<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-4"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-post"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-image has-overlay"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(img/article-06.jpg)"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Progress<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, saepe!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-footer"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-category"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>UX Design<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"article-comments"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-comments"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>2022.10.24<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row is-centered"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#intro"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn secondary view-more"</span>&gt;</span>View more<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"has-padding footer-bg"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-md-12 footer-nav"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footer-primary-nav"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#freebies"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#team"</span>&gt;</span>Team Introduction<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#articles"</span>&gt;</span>Gallery<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#articles"</span>&gt;</span>Course Progress<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"share-dropdown"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"share-twitter"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-twitter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"share-facebook"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-facebook"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"share-linkedin"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fa fa-linkedin"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"footer-secondary-nav"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Copyright <span class="hljs-symbol">&amp;copy;</span> 2022.Company name All rights reserved.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/jquery.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/jquery-ui.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/video.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="handlebars"><span class="xml">
+            window.jQuery || document.write('<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/min/jquery-1.11.2.min.js"</span>&gt;</span><span class="handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">\</span>/<span class="hljs-attr">script</span>&gt;</span>')
+        </span></span></span></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/min/bootstrap.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/min/modernizr-2.8.3-respond-1.4.2.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/min/retina.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/min/jquery.waypoints.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/min/flickity.pkgd.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/min/scripts-min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+    </div></code></pre>
+        </div>
+
+
+
+
+           
+        
     </div>
+
+
+
+
+</body>

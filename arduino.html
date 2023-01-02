@@ -178,7 +178,21 @@ void loop() {
                 </div>
                 <!-- 结束 -->
                 <h2>超声波测距，LCD1602显示</h2>
+                
+                <img class="picture" src="./img/A1.gif" alt="" width="40%">
+
+                <h3>实物展示</h3>
                 <img class="picture" src="./img/ad3.png" alt="" width="40%">
+ 
+              <div>
+                <video width="602px" height="345px" controls="controls"> 
+                  <source src=".img/A1.mp4" type="video/mp4"></source> 
+                  your browser does not support the video tag 
+                  </video> 
+                </div>
+                  
+
+
                 <h3>代码展示</h3>
                 <div>
                     <pre><code class="cpp">
@@ -335,6 +349,8 @@ long getDistance() {
                 </div>
                 <!-- 结束 -->
                 <h2>温湿度传感实验</h2>
+                
+                <img class="picture" src="./img/A2.jpg" alt="" width="40%">
                 <h3>代码展示</h3>
                 <div>
                     <pre><code class="cpp">
@@ -493,9 +509,16 @@ long getDistance() {
                 <!-- 结束 -->
                 <h2>与processing联动的红绿灯实验</h2>
                 <img class="picture" src="./img/ad4.png" alt="" width="40%">
-                <h3>代码展示</h3>
+              <div>           
+              <video width="602px" height="345px" controls="controls"> 
+                <source src="./img/processing.mp4" type="video/mp4"></source> 
+                your browser does not support the video tag 
+                </video> 
+              </div>
+                            
+                <h3>processing代码展示</h3>
                 <div>
-                    <pre><code class="cpp">
+                    <pre><code class="java">
 import processing.serial.*;
 Serial port;
 
@@ -533,6 +556,48 @@ void mouseClicked(){
   }
 }
 
+                    <code><pre>
+                </div>
+                <h3>Arduinos代码展示</h3>
+                <div>
+                    <pre><code class="cpp">
+    int redPin = 3;
+    int greenPin = 4;
+    int bluePin = 5;
+    
+    int c = 0;
+    
+    void setup()
+    {
+      Serial.begin(9600);  
+      pinMode(redPin,OUTPUT);
+      pinMode(greenPin,OUTPUT);
+      pinMode(bluePin,OUTPUT);
+    }
+    
+    void loop()
+    {
+      if(Serial.available());
+      c = Serial.read();
+      if (c == 97)  //a in ASCII is 97
+      {
+        digitalWrite(redPin,HIGH);   
+        delay(500);
+        digitalWrite(redPin,LOW); 
+      }
+      if (c == 98)  //b in ASCII is 98
+      {
+        digitalWrite(greenPin,HIGH);   
+        delay(500);
+        digitalWrite(greenPin,LOW);    
+      }
+      if (c == 99)  
+      {
+        digitalWrite(bluePin,HIGH);   
+        delay(500);
+        digitalWrite(bluePin,LOW);
+      }
+    }
                     <code><pre>
                 </div>
                 <!-- 结束 -->
