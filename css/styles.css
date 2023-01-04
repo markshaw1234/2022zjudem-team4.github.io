@@ -4298,7 +4298,7 @@ footer .footer-nav ul.footer-secondary-nav li {
     width: 1560px;
     height: 100%;
     margin-left: 17.8%;
-    margin-top: 50px;
+     word-break: break-all;
 }
 
 .content img {
@@ -4307,11 +4307,13 @@ footer .footer-nav ul.footer-secondary-nav li {
 }
 
 .content p {
+    width: 900px;
     font-size: 18px;
     line-height: 30px;
     padding-bottom: 15px;
     color: #414A52;
     margin-bottom: 20px;
+    word-break: break-all;
 
 }
 
@@ -4328,10 +4330,11 @@ footer .footer-nav ul.footer-secondary-nav li {
 }
 
 .content p {
-    font-size: 20px;
-    line-height: 27px;
+    width: 900px;
+    font-size: 18px;
+    line-height: 30px;
     padding-bottom: 15px;
     color: #414A52;
-    margin-bottom: 1px;
-    line-height: 45px;
+    margin-bottom: 20px;
+    word-break: break-all;
 } */
