@@ -4298,7 +4298,8 @@ footer .footer-nav ul.footer-secondary-nav li {
     width: 1560px;
     height: 100%;
     margin-left: 17.8%;
-     word-break: break-all;
+    margin-top: 50px;
+    word-break: break-all;
 }
 
 .content img {
@@ -4307,7 +4308,7 @@ footer .footer-nav ul.footer-secondary-nav li {
 }
 
 .content p {
-    width: 850px;
+    width: 900px;
     font-size: 18px;
     line-height: 30px;
     padding-bottom: 15px;
@@ -4329,11 +4330,10 @@ footer .footer-nav ul.footer-secondary-nav li {
 }
 
 .content p {
-    width: 850px;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 27px;
     padding-bottom: 15px;
     color: #414A52;
-    margin-bottom: 20px;
-    word-break: break-all;
+    margin-bottom: 1px;
+    line-height: 45px;
 } */
