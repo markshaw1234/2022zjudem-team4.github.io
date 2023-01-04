@@ -4314,7 +4314,6 @@ footer .footer-nav ul.footer-secondary-nav li {
     color: #414A52;
     margin-bottom: 20px;
     word-break: break-all;
-
 }
 
 /* .content .title2 {
@@ -4330,7 +4329,7 @@ footer .footer-nav ul.footer-secondary-nav li {
 }
 
 .content p {
-    width: 900px;
+    width: 850px;
     font-size: 18px;
     line-height: 30px;
     padding-bottom: 15px;
